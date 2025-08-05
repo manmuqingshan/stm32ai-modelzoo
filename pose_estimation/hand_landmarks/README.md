@@ -53,11 +53,11 @@ Measures are done with default STM32Cube.AI configuration with enabled input / o
 ### Reference **NPU** memory footprint based on COCO Person dataset (see Accuracy for details on dataset)
 |Model      | Dataset       | Format   | Resolution | Series    | Internal RAM (KiB) | External RAM (KiB) | Weights Flash (KiB) | STM32Cube.AI version | STEdgeAI Core version |
 |----------|------------------|--------|-------------|------------------|------------------|---------------------|-------|----------------------|-------------------------|
-| [hand_landmarks](Public_pretrainedmodel_custom_dataset/custom_dataset_hands_21kpts/hand_landmarks_full_224_int8_pc.tflite)  | COCO-Person | Int8 | 224x224x3 | STM32N6 |                 1739.5   | 0.0 | 3283.38 | 10.0.0  | 2.0.0 |
+| [hand_landmarks](Public_pretrainedmodel_custom_dataset/custom_dataset_hands_21kpts/hand_landmarks_full_224_int8_pc.tflite)  | COCO-Person | Int8 | 224x224x3 | STM32N6 |                 1739.5   | 0.0 | 3283.38 | 10.2.0  | 2.2.0 |
 
 ### Reference **NPU**  inference time based on COCO Person dataset (see Accuracy for details on dataset)
 | Model  | Dataset          | Format | Resolution  | Board            | Execution Engine | Inference time (ms) | Inf / sec   | STM32Cube.AI version  |  STEdgeAI Core version |
 |--------|------------------|--------|-------------|------------------|------------------|---------------------|-------|----------------------|-------------------------|
-| [hand_landmarks](Public_pretrainedmodel_custom_dataset/custom_dataset_hands_21kpts/hand_landmarks_full_224_int8_pc.tflite) | custom_dataset_hands_21kpts      | Int8     | 224x224x3  | STM32N6570-DK   | NPU/MCU | 20.75 | 48.19 | 10.0.0 | 2.0.0 |
+| [hand_landmarks](Public_pretrainedmodel_custom_dataset/custom_dataset_hands_21kpts/hand_landmarks_full_224_int8_pc.tflite) | custom_dataset_hands_21kpts      | Int8     | 224x224x3  | STM32N6570-DK   | NPU/MCU | 20.75 | 48.19 | 10.2.0 | 2.2.0 |
 
 

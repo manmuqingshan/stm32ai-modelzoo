@@ -48,7 +48,7 @@ For a frame of resolution of (wl x 3) and P classes
 
 ## Metrics
 
-Measures are done with default STM32Cube.AI Dev Cloud version 10.0.0 and for target board B-U585I-IOT02A. In addition the configuration were enabled input / output allocated option and `balanced` as optimization choice.
+Measures are done with default STM32Cube.AI Dev Cloud version 10.2.0 and for target board B-U585I-IOT02A. In addition the configuration were enabled input / output allocated option and `balanced` as optimization choice.
 
 The inference time is reported is calculated on STM32 board **B-U585I-IOT02A** running at Frequency of **160 MHz**.
 
@@ -58,8 +58,8 @@ The inference time is reported is calculated on STM32 board **B-U585I-IOT02A** r
 
 | Model                                                                        | Format | Input Shape | Target Board  | Activation RAM (KiB) | Runtime RAM (KiB) | Weights Flash (KiB) | Code Flash (KiB) | Total RAM (KiB)   | Total Flash (KiB) | Inference Time (ms) | STM32Cube.AI version  |
 |:----------------------------------------------------------------------------:|:------:|:-----------:|:-------:|:--------------------:|:-----------------:|:-------------------:|:----------------:|:-----------------:|:-----------------:|:---------------------:|:---------------------:|
-| [GMP wl 24](ST_pretrainedmodel_public_dataset/WISDM/gmp_wl_24/gmp_wl_24.h5)  | FLOAT32| 24 x 3 x 1  | B-U585I-IOT02A | 4.25          | 2.08              | 5.70                | 12.29            |  6.33             | 18.96             | 4.42      | 10.0.0     |
-| [GMP wl 48](ST_pretrainedmodel_public_dataset/WISDM/gmp_wl_48/gmp_wl_48.h5)  | FLOAT32| 48 x 3 x 1  | B-U585I-IOT02A | 8.83          | 2.08              | 5.70                | 12.29            |  10.91            | 18.96             | 10.64     | 10.0.0     |
+| [GMP wl 24](ST_pretrainedmodel_public_dataset/WISDM/gmp_wl_24/gmp_wl_24.h5)  | FLOAT32| 24 x 3 x 1  | B-U585I-IOT02A | 4.25          | 2.08              | 5.70                | 12.29            |  6.33             | 18.96             | 4.42      | 10.2.0     |
+| [GMP wl 48](ST_pretrainedmodel_public_dataset/WISDM/gmp_wl_48/gmp_wl_48.h5)  | FLOAT32| 48 x 3 x 1  | B-U585I-IOT02A | 8.83          | 2.08              | 5.70                | 12.29            |  10.91            | 18.96             | 10.64     | 10.2.0     |
 
 
 

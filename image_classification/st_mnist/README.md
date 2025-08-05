@@ -60,7 +60,7 @@ For an image resolution of 28x28 and 36 classes : 10 integers (from 0-9) and 26 
 
 | Model             | Format | Resolution | Series  | Activation RAM | Runtime RAM | Weights Flash | Code Flash | Total RAM   | Total Flash | STM32Cube.AI version  |
 |-------------------|--------|------------|---------|----------------|-------------|---------------|------------|-------------|-------------|-----------------------|
-| [ST MNIST Byclass v1 tfs](./ST_pretrainedmodel_public_dataset/emnist_byclass/st_mnist_v1_28_tfs/st_mnist_v1_28_tfs_int8.tflite) | Int8   | 28x28x1    | STM32H7 | 17.21 KiB     | 4.49 KiB       | 10.08 KiB    | 46.8 KiB    | 21.7 KiB   | 56.88 KiB  | 10.0.0                 |
+| [ST MNIST Byclass v1 tfs](./ST_pretrainedmodel_public_dataset/emnist_byclass/st_mnist_v1_28_tfs/st_mnist_v1_28_tfs_int8.tflite) | Int8   | 28x28x1    | STM32H7 | 17.21 KiB     | 4.5 KiB     | 10.08 KiB    | 45.75 KiB  | 21.7 KiB   | 55.83 KiB   | 10.2.0                 |
 
 
 ### Reference **MCU** inference time based on EMNIST-Byclass dataset (see Accuracy for details on dataset)
@@ -68,15 +68,15 @@ For an image resolution of 28x28 and 36 classes : 10 integers (from 0-9) and 26 
 
 | Model             | Format | Resolution | Board            |   Frequency   | Inference time (ms) | STM32Cube.AI version  |
 |-------------------|--------|------------|------------------|---------------|---------------------|-----------------------|
-| [ST MNIST Byclass v1 tfs](./ST_pretrainedmodel_public_dataset/emnist_byclass/st_mnist_v1_28_tfs/st_mnist_v1_28_tfs_int8.tflite) | Int8   | 28x28x1    | STM32H747I-DISCO | 400 MHz       |      3.41 ms       | 10.0.0                 |
+| [ST MNIST Byclass v1 tfs](./ST_pretrainedmodel_public_dataset/emnist_byclass/st_mnist_v1_28_tfs/st_mnist_v1_28_tfs_int8.tflite) | Int8   | 28x28x1    | STM32H747I-DISCO | 400 MHz       | 3.44 ms             | 10.2.0                 |
 
 
 ### Reference **MPU** inference time based on EMNIST-Byclass dataset (see Accuracy for details on dataset)
 | Model                                                                                                                           |  Format  | Resolution | Quantization  | Board             | Execution Engine | Frequency | Inference time (ms) | %NPU  | %GPU  | %CPU | X-LINUX-AI version |       Framework       |
 |---------------------------------------------------------------------------------------------------------------------------------|----------|------------|---------------|-------------------|------------------|-----------|---------------------|-------|-------|------|--------------------|-----------------------|
-| [ST MNIST Byclass v1 tfs](./ST_pretrainedmodel_public_dataset/emnist_byclass/st_mnist_v1_28_tfs/st_mnist_v1_28_tfs_int8.tflite) | Int8     | 28x28x1    |  per-channel**  | STM32MP257F-DK2   | 2 CPU            | 1500  MHz | 0.31  ms            | 0     | 0     | 100    | v5.1.0           | TensorFlowLite 2.11.0 |
-| [ST MNIST Byclass v1 tfs](./ST_pretrainedmodel_public_dataset/emnist_byclass/st_mnist_v1_28_tfs/st_mnist_v1_28_tfs_int8.tflite) | Int8     | 28x28x1    |  per-channel  | STM32MP157F-DK2   | 2 CPU            | 800  MHz  | 0.69 ms             | NA    | NA    | 100  | v5.1.0             | TensorFlowLite 2.11.0 |
-| [ST MNIST Byclass v1 tfs](./ST_pretrainedmodel_public_dataset/emnist_byclass/st_mnist_v1_28_tfs/st_mnist_v1_28_tfs_int8.tflite) | Int8     | 28x28x1    |  per-channel  | STM32MP135F-DK2   | 1 CPU            | 1000 MHz  | 1.070 ms            | NA    | NA    | 100  | v5.1.0             | TensorFlowLite 2.11.0 |
+| [ST MNIST Byclass v1 tfs](./ST_pretrainedmodel_public_dataset/emnist_byclass/st_mnist_v1_28_tfs/st_mnist_v1_28_tfs_int8.tflite) | Int8     | 28x28x1    |  per-channel**  | STM32MP257F-DK2   | 2 CPU            | 1500  MHz | 0.83  ms            | 56.52     | 43.84     | 0    | v6.1.0           | TensorFlowLite 2.18.0 |
+| [ST MNIST Byclass v1 tfs](./ST_pretrainedmodel_public_dataset/emnist_byclass/st_mnist_v1_28_tfs/st_mnist_v1_28_tfs_int8.tflite) | Int8     | 28x28x1    |  per-channel  | STM32MP157F-DK2   | 2 CPU            | 800  MHz  | 0.69 ms             | NA    | NA    | 100  | v6.1.0             | TensorFlowLite 2.18.0 |
+| [ST MNIST Byclass v1 tfs](./ST_pretrainedmodel_public_dataset/emnist_byclass/st_mnist_v1_28_tfs/st_mnist_v1_28_tfs_int8.tflite) | Int8     | 28x28x1    |  per-channel  | STM32MP135F-DK2   | 1 CPU            | 1000 MHz  | 1.04 ms            | NA    | NA    | 100  | v6.1.0             | TensorFlowLite 2.18.0 |
 
 ** **To get the most out of MP25 NPU hardware acceleration, please use per-tensor quantization**
 

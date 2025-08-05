@@ -63,9 +63,9 @@ Measures are done with default STM32Cube.AI configuration with enabled input / o
 
 | Model      | Dataset       | Format   | Resolution | Series    | Internal RAM (KiB) | External RAM (KiB) | Weights Flash (KiB) | STM32Cube.AI version | STEdgeAI Core version |
 |------------|---------------|----------|------------|-----------|--------------|--------------|---------------|----------------------|-----------------------|
-| [DeepLabv3 MobileNetv2 ASPPv2](./ST_pretrainedmodel_public_dataset/person_coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_256/deeplab_v3_mobilenetv2_05_16_256_asppv2_qdq_int8.onnx) | person COCO 2017 + PASCAL VOC 2012 | Int8 | 256x256x3 | STM32N6 | 2253.5 | 0.0 | 1001.25 | 10.0.0 | 2.0.0 | 
-| [DeepLabv3 MobileNetv2 ASPPv2](./ST_pretrainedmodel_public_dataset/person_coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_320/deeplab_v3_mobilenetv2_05_16_320_asppv2_qdq_int8.onnx) |person COCO 2017 + PASCAL VOC 2012 | Int8 | 320x320x3 | STM32N6 | 2446.0 | 0.0 | 1000.41 | 10.0.0 | 2.0.0 |
-| [DeepLabv3 MobileNetv2 ASPPv2](./ST_pretrainedmodel_public_dataset/person_coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_416/deeplab_v3_mobilenetv2_05_16_416_asppv2_qdq_int8.onnx) | person COCO 2017 + PASCAL VOC 2012  | Int8 | 416x416x3  | STM32N6 | 2743.5 | 2028.0 | 2721.19 | 10.0.0 | 2.0.0 |
+| [DeepLabv3 MobileNetv2 ASPPv2](./ST_pretrainedmodel_public_dataset/person_coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_256/deeplab_v3_mobilenetv2_05_16_256_asppv2_qdq_int8.onnx) | person COCO 2017 + PASCAL VOC 2012 | Int8 | 256x256x3 | STM32N6 | 2071.25 | 0.0 | 960.58 | 10.2.0 | 2.2.0 |
+| [DeepLabv3 MobileNetv2 ASPPv2](./ST_pretrainedmodel_public_dataset/person_coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_320/deeplab_v3_mobilenetv2_05_16_320_asppv2_qdq_int8.onnx) |person COCO 2017 + PASCAL VOC 2012 | Int8 | 320x320x3 | STM32N6 | 2583.5 | 0.0 | 959.74 | 10.2.0 | 2.2.0 |
+| [DeepLabv3 MobileNetv2 ASPPv2](./ST_pretrainedmodel_public_dataset/person_coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_416/deeplab_v3_mobilenetv2_05_16_416_asppv2_qdq_int8.onnx) | person COCO 2017 + PASCAL VOC 2012| Int8 | 416x416x3  | STM32N6 | 2727.12 | 2028.0 | 960.58 | 10.2.0 | 2.2.0 |
 
 
 
@@ -74,18 +74,18 @@ Measures are done with default STM32Cube.AI configuration with enabled input / o
 
 | Model      | Dataset       | Format   | Resolution | Board            | Execution Engine | Inference time (ms) | Inf / sec   | STM32Cube.AI version  |  STEdgeAI Core version |
 |------------|---------------|----------|------------|------------------|------------------|---------------------|-------------|----------------------|-------------------------|
-| [DeepLabv3 MobileNetv2 ASPPv2](./ST_pretrainedmodel_public_dataset/person_coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_256/deeplab_v3_mobilenetv2_05_16_256_asppv2_qdq_int8.onnx) | person COCO 2017 + PASCAL VOC 2012 | Int8 | 256x256x3 | STM32N6570-DK | NPU/MCU | 27.36 | 36.54 | 10.0.0 | 2.0.0 |
-| [DeepLabv3 MobileNetv2 ASPPv2](./ST_pretrainedmodel_public_dataset/person_coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_320/deeplab_v3_mobilenetv2_05_16_320_asppv2_qdq_int8.onnx) | person COCO 2017 + PASCAL VOC 2012 | Int8 | 320x320x3  | STM32N6570-DK | NPU/MCU | 44.99 | 22.22 | 10.0.0 | 2.0.0 |
-| [DeepLabv3 MobileNetv2 ASPPv2](./ST_pretrainedmodel_public_dataset/person_coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_416/deeplab_v3_mobilenetv2_05_16_416_asppv2_qdq_int8.onnx) | person COCO 2017 + PASCAL VOC 2012 | Int8 | 416x416x3 | STM32N6570-DK | NPU/MCU | 191.91 | 5.21 | 10.0.0 | 2.0.0 |
+| [DeepLabv3 MobileNetv2 ASPPv2](./ST_pretrainedmodel_public_dataset/person_coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_256/deeplab_v3_mobilenetv2_05_16_256_asppv2_qdq_int8.onnx) | person COCO 2017 + PASCAL VOC 2012 | Int8 | 256x256x3 | STM32N6570-DK | NPU/MCU | 29.63 | 33.74 | 10.2.0 | 2.2.0 |
+| [DeepLabv3 MobileNetv2 ASPPv2](./ST_pretrainedmodel_public_dataset/person_coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_320/deeplab_v3_mobilenetv2_05_16_320_asppv2_qdq_int8.onnx) | person COCO 2017 + PASCAL VOC 2012 | Int8 | 320x320x3  | STM32N6570-DK | NPU/MCU | 45.34 | 22.05 | 10.2.0 | 2.2.0 |
+| [DeepLabv3 MobileNetv2 ASPPv2](./ST_pretrainedmodel_public_dataset/person_coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_416/deeplab_v3_mobilenetv2_05_16_416_asppv2_qdq_int8.onnx) | person COCO 2017 + PASCAL VOC 2012 | Int8 | 416x416x3 | STM32N6570-DK | NPU/MCU | 165.35 | 6.04 | 10.2.0 | 2.2.0 |
 
 
 ### Reference **MPU** inference time based on COCO  2017 + PASCAL VOC 2012  segmentation dataset 21 classes and a derivative person dataset from it  (see Accuracy for details on dataset)
 | Model | Dataset     | Format | Resolution | Quantization   | Board| Execution Engine | Frequency | Inference time (ms) | %NPU  | %GPU   | %CPU | X-LINUX-AI version |Framework |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|------------|----------------|-------------------|------------------|-----------|---------------------|-------|--------|------|--------------------|-----------------------|
-| [DeepLabV3 per tensor (no ASPP)](https://www.st.com/en/embedded-software/x-linux-ai.html)                                                                                                                       | COCO 2017 + PASCAL VOC 2012   | Int8   | 257x257x3  | per-tensor     | STM32MP257F-DK2   | NPU/GPU          | 1500  MHz | 52.75           | 99.2 | 0.80  | 0 | v5.1.0             | OpenVX                |                |       |        |      | v5.1.0 
-| [DeepLabV3 MobileNetv2 ASPPv1 per channel](./ST_pretrainedmodel_public_dataset/coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_512/deeplab_v3_mobilenetv2_05_16_512_asppv1_int8.tflite) | COCO 2017 + PASCAL VOC 2012   | Int8 (tflite)  | 512x512x3  | per-channel ** | STM32MP257F-DK2   | NPU/GPU          | 1500  MHz | 806.12            | 8.73| 91.27 | 0   | v5.1.0             | OpenVX                |
-| [DeepLabV3 MobileNetv2 ASPPv1 mixed precision](./ST_pretrainedmodel_public_dataset/coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_512/deeplab_v3_mobilenetv2_05_16_512_asppv1_int8_f32.tflite) | COCO 2017 + PASCAL VOC 2012   | Int8 & float32 (tflite) | 512x512x3  | per-channel ** | STM32MP257F-DK2   | NPU/GPU          | 1500  MHz |  894.56  | 7.67 | 92.33 | 0  | v5.1.0             | OpenVX                |
-| [DeepLabV3 MobileNetv2 ASPPv1 per channel](./ST_pretrainedmodel_public_dataset/coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_512/deeplab_v3_mobilenetv2_05_16_512_asppv1_qdq_int8.onnx) | COCO 2017 + PASCAL VOC 2012   | Int8 (onnx) | 512x512x3 | per-channel ** | STM32MP257F-DK2  | NPU/GPU  | 1500  MHz |  729.62 | 3.0 | 97.0 | 0  | v5.1.0| OpenVX |
+| [DeepLabV3 per tensor (no ASPP)](https://www.st.com/en/embedded-software/x-linux-ai.html)                                                                                                                       | COCO 2017 + PASCAL VOC 2012   | Int8   | 257x257x3  | per-tensor     | STM32MP257F-DK2   | NPU/GPU          | 1500  MHz | 52.75           | 99.2 | 0.80  | 0 | v6.1.0             | OpenVX                |                |       |        |      | v6.1.0
+| [DeepLabV3 MobileNetv2 ASPPv1 per channel](./ST_pretrainedmodel_public_dataset/coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_512/deeplab_v3_mobilenetv2_05_16_512_asppv1_int8.tflite) | COCO 2017 + PASCAL VOC 2012   | Int8 (tflite)  | 512x512x3  | per-channel ** | STM32MP257F-DK2   | NPU/GPU          | 1500  MHz | 830.50            | 7.38| 92.62 | 0   | v6.1.0             | OpenVX                |
+| [DeepLabV3 MobileNetv2 ASPPv1 mixed precision](./ST_pretrainedmodel_public_dataset/coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_512/deeplab_v3_mobilenetv2_05_16_512_asppv1_int8_f32.tflite) | COCO 2017 + PASCAL VOC 2012   | Int8 & float32 (tflite) | 512x512x3  | per-channel ** | STM32MP257F-DK2   | NPU/GPU          | 1500  MHz |  939.8  | 6.29 | 93.71 | 0  | v6.1.0             | OpenVX                |
+| [DeepLabV3 MobileNetv2 ASPPv1 per channel](./ST_pretrainedmodel_public_dataset/coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_512/deeplab_v3_mobilenetv2_05_16_512_asppv1_qdq_int8.onnx) | COCO 2017 + PASCAL VOC 2012   | Int8 (onnx) | 512x512x3 | per-channel ** | STM32MP257F-DK2  | NPU/GPU  | 1500  MHz |  729.62 | 3.0 | 97.0 | 0  | v6.1.0| OpenVX |
 
 - **DeepLabV3 per tensor**:
    This model, which does not include ASPP (Atrous Spatial Pyramid Pooling), was downloaded from the TensorFlow DeepLabV3 page on [Kaggle](https://www.kaggle.com/models/tensorflow/deeplabv3/).
@@ -104,14 +104,14 @@ Measures are done with default STM32Cube.AI configuration with enabled input / o
 
 ** **To get the most out of MP25 NPU hardware acceleration, please use per-tensor quantization**
 
-### Accuracy with COCO 2017 + PASCAL VOC 2012  
+### Accuracy with COCO 2017 + PASCAL VOC 2012
 
 **Pascal VOC Dataset Details:**
 
-- **Link:** [VOC 2012 Dataset](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) 
+- **Link:** [VOC 2012 Dataset](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/)
 - **License:** [Database Contents License (DbCL) v1.0](https://opendatacommons.org/licenses/dbcl/1-0/)
 - **Number of Classes:** 21
-- **Contents:** 
+- **Contents:**
   - 1464 training images and masks
   - 1449 validation images and masks
 
@@ -138,7 +138,7 @@ Moreover, IoU are averaged on all classes including background.
 | [DeepLabv3 MobileNetv2 ASPPv1 per channel](./ST_pretrainedmodel_public_dataset/coco_2017_pascal_voc_2012/deeplab_v3_mobilenetv2_05_16_512/deeplab_v3_mobilenetv2_05_16_512_asppv1_qdq_int8.onnx) | 512x512x3 | Int8  (onnx) | 93.15%| 72.39% |
 
 
-### Accuracy with Person COCO 2017 + PASCAL VOC 2012  
+### Accuracy with Person COCO 2017 + PASCAL VOC 2012
 
 **Please use the [Person COCO 2017 PASCAL VOC 2012 tutorial](https://github.com/STMicroelectronics/stm32ai-modelzoo/tree/main/semantic_segmentation/datasets/n_class_coco_2017_pascal_voc_2012) to create Pesron COCO 2017 + PASCAL VOC 2012 dataset.**
 

@@ -10,7 +10,7 @@ projects.
 - A large collection of application-oriented models ready for re-training
 - Pre-trained models on reference datasets
 
-**Scripts to easily retrain, quantize, evaluate or benchmark any model from user datasets as well as application code examples automatically generated from user AI model can be found in the  [stm32ai-modelzoo-services GitHub](https://github.com/STMicroelectronics/stm32ai-modelzoo-services)** 
+**Scripts to easily retrain, quantize, evaluate or benchmark any model from user datasets as well as application code examples automatically generated from user AI model can be found in the  [stm32ai-modelzoo-services GitHub](https://github.com/STMicroelectronics/stm32ai-modelzoo-services)**
 
 
 These models can be useful for quick deployment if you are interested in the categories that they were trained. We also provide training scripts to do transfer learning or to train your own model from scratch on your custom dataset.
@@ -19,7 +19,17 @@ The performances on reference STM32 MCU, NPU and MPU are provided for float and 
 
 ## What's new in releases :
 </details>
-<details open><summary><b>3.1:</b></summary>
+<details open><summary><b>3.2:</b></summary>
+
+* Support for **STEdgeAI Core v2.2.0** (STM32Cube.AI v10.2.0).
+* Support of **X-Linux-AI v6.1.0** support for MPU.
+* New use cases added: **StyleTransfer** and **FastDepth**.
+* New models added: **Face Detection**, available in the Object Detection use case, and **Face Landmarks**, available in the Pose Estimation use case.
+* Architecture and codebase clean-up.
+</details>
+
+</details>
+<details><summary><b>3.1:</b></summary>
 
 * Included additional models support (yolo_v11, st_yolo_x variants)
 </details>
@@ -27,18 +37,18 @@ The performances on reference STM32 MCU, NPU and MPU are provided for float and 
 
 * Included additional models compatible with the [STM32N6570-DK](https://www.st.com/en/evaluation-tools/stm32n6570-dk) board.
 * Expanded models in all use cases.
-* Expanded use case support to include `Instance Segmentation` and `Speech Enhancement`.
+* Expanded use case support to include **Instance Segmentation** and **Speech Enhancement**.
 * Added `Pytorch` support through the speech enhancement Use Case.
 * Model Zoo hosted on <a href="#Hugging Face">Hugging Face</a>
 </details>
 <details><summary><b>2.1:</b></summary>
 
 * Included additional models compatible with the [STM32MP257F-EV1](https://www.st.com/en/evaluation-tools/stm32mp257f-ev1) board.
-* Expanded use case support to include `Pose Estimation` and `Semantic Segmentation`.
+* Expanded use case support to include **Pose Estimation** and **Semantic Segmentation**.
 </details>
 <details><summary><b>2.0:</b></summary>
 
-* An aligned and `uniform architecture` for all the use case
+* An aligned and **uniform architecture** for all the use case
 </details>
 
 
@@ -50,6 +60,8 @@ The performances on reference STM32 MCU, NPU and MPU are provided for float and 
 | [Pose Estimation](./pose_estimation/README.md)   | Detects key points on some specific objects (people, hand, face, ...).     | [STM32MP257F-EV1](https://github.com/STMicroelectronics/stm32ai-modelzoo-services/blob/main/application_code/pose_estimation/STM32MP-LINUX/STM32MP2/README.md) <br> [STM32N6570-DK](https://www.st.com/en/development-tools/stm32n6-ai.html) <br> | <div align="center" style="width:480px; margin: left;">![plot](./doc/img/output_application_pe.JPG) |
 | [Semantic Segmentation](./semantic_segmentation/README.md)   | Associates a label to every pixel in an image to recognize a collection of pixels that form distinct categories.     | [STM32MP257F-EV1](https://github.com/STMicroelectronics/stm32ai-modelzoo-services/blob/main/application_code/STM32MP-LINUX/STM32MP2/README.md) <br> [STM32N6570-DK](https://www.st.com/en/development-tools/stm32n6-ai.html) <br> | <div align="center" style="width:480px; margin: left;">![plot](./doc/img/output_application_semseg.JPG) |
 | [Instance Segmentation](./instance_segmentation/README.md)   | Associates a label to every pixel in an image to recognize a collection of pixels that form distinct categories or instances of each category.     |  [STM32N6570-DK](https://www.st.com/en/development-tools/stm32n6-ai.html) <br> | <div align="center" style="width:480px; margin: left;">![plot](./doc/img/output_application_instseg.JPG) |
+| [Depth Estimation](./depth_estimation/README.md)   | Predict the distance to objects from an image as a pixel-wise depth map.     |  [STM32N6570-DK](https://www.st.com/en/development-tools/stm32n6-ai.html) <br>  | <div align="center" style="width:480px; margin: left;">![plot](./doc/img/output_application_de.JPG) |
+| [Neural Style Transfer](./neural_style_transfer/README.md)   | applies the artistic style of one image to the content of another image.     |  [STM32N6570-DK](https://www.st.com/en/development-tools/stm32n6-ai.html) <br>  | <div align="center" style="width:480px; margin: left;">![plot](./doc/img/output_application_nst.JPG) |
 | [Audio Event Detection](./audio_event_detection/README.md)   | Detection of a specific audio events.     | [B-U585I-IOT02A ThreadX](https://github.com/STMicroelectronics/stm32ai-modelzoo-services/blob/main/application_code/sensing_thread_x/STM32U5/README.md) <br> [B-U585I-IOT02A FreeRTOS](https://github.com/STMicroelectronics/stm32ai-modelzoo-services/blob/main/application_code/sensing_free_rtos/STM32U5/README.md) <br> [STM32N6570-DK](https://www.st.com/en/development-tools/stm32n6-ai.html) <br> | <div align="center" style="width:480px; margin: left;">![plot](./doc/img/output_application_aed.JPG) |
 | [Speech Enhancement](./speech_enhancement/README.md)   | Enhancement of the audio perception in a noisy environment.     |  [STM32N6570-DK](https://www.st.com/en/development-tools/stm32n6-ai.html) <br> | <div align="center" style="width:480px; margin: left;">![plot](./doc/img/output_application_se.JPG) |
 | [Human Activity Recognition](./human_activity_recognition/README.md)   | Recognizes various activities like walking, running, ...     |  [B-U585I-IOT02A](https://github.com/STMicroelectronics/stm32ai-modelzoo-services/blob/main/application_code/sensing_thread_x/STM32U5/README.md) <br> | <div align="center" style="width:480px; margin: left;">![plot](./doc/img/output_application_har.JPG) |
@@ -88,7 +100,7 @@ Once downloaded and installed, set up Git LFS for your user account by running t
 ```sh
 git lfs install
 ```
-You should see the message `Git LFS initialized.` if the command runs successfully. 
+You should see the message `Git LFS initialized.` if the command runs successfully.
 
 **NOTE:** If you do not see the message `Git LFS initialized.`, visit the [GitHub documentation page](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage) for more details and support.
 

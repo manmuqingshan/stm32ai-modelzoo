@@ -49,32 +49,33 @@ With an image resolution of NxM and K classes to detect:
 
 ## Metrics
 
-Measures are done with default STM32Cube.AI configuration with enabled input / output allocated option.
+Measures are done with default STM32Cube.AI configuration with enabled input / output allocated option.  
+> [!CAUTION] 
+> All YOLOv8 hyperlinks in the tables below link to an external GitHub folder, which is subject to its own license terms:
+https://github.com/stm32-hotspot/ultralytics/blob/main/LICENSE
+Please also check the folder's README.md file for detailed information about its use and content:
+https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/README.md
 
 
 ### Reference **NPU** memory footprint based on COCO Person dataset (see Accuracy for details on dataset)
-|Model      | Dataset       | Format   | Resolution | Series    | Internal RAM | External RAM | Weights Flash | STM32Cube.AI version | STEdgeAI Core version |
-|----------|------------------|--------|-------------|------------------|------------------|---------------------|-------|----------------------|-------------------------|
-| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_192_quant_pc_uf_od_coco-person.tflite)  | COCO-Person      | Int8     | 192x192x3  | STM32N6   |  697.5  | 0.0 | 2965.61 | 10.0.0 | 2.0.0 |
-| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_256_quant_pc_uf_od_coco-person.tflite)  | COCO-Person      | Int8     | 256x256x3  | STM32N6   | 1626 | 0.0 | 2970.13 | 10.0.0 | 2.0.0 |
-| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_320_quant_pc_uf_od_coco-person.tflite)  | COCO-Person      | Int8     | 320x320x3  | STM32N6   | 2162.5 | 0.0 | 2975.99 | 10.0.0 | 2.0.0 |
-| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_416_quant_pc_uf_od_coco-person.tflite)  | COCO-Person      | Int8     | 416x416x3  | STM32N6   | 2704 | 0.0 | 2987.52 | 10.0.0 | 2.0.0 |
-
-
+| Model                                                                                                                                                                                 | Dataset     | Format   | Resolution   | Series   |   Internal RAM |   External RAM |   Weights Flash | STM32Cube.AI version   | STEdgeAI Core version   |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|----------|--------------|----------|----------------|----------------|-----------------|------------------------|-------------------------|
+| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_192_quant_pc_uf_od_coco-person.tflite) | COCO-Person | Int8     | 192x192x3    | STM32N6  |         261    |              0 |         2936.52 | 10.2.0                 | 2.2.0                   |
+| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_256_quant_pc_uf_od_coco-person.tflite) | COCO-Person | Int8     | 256x256x3    | STM32N6  |         624    |              0 |         2941.09 | 10.2.0                 | 2.2.0                   |
+| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_320_quant_pc_uf_od_coco-person.tflite) | COCO-Person | Int8     | 320x320x3    | STM32N6  |         839.06 |              0 |         2947.02 | 10.2.0                 | 2.2.0                   |
+| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_416_quant_pc_uf_od_coco-person.tflite) | COCO-Person | Int8     | 416x416x3    | STM32N6  |        2242.84 |              0 |         2958.34 | 10.2.0                 | 2.2.0                   |
 ### Reference **NPU**  inference time based on COCO Person dataset (see Accuracy for details on dataset)
-| Model  | Dataset          | Format | Resolution  | Board            | Execution Engine | Inference time (ms) | Inf / sec   | STM32Cube.AI version  |  STEdgeAI Core version |
-|--------|------------------|--------|-------------|------------------|------------------|---------------------|-------|----------------------|-------------------------|
-| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_192_quant_pc_uf_od_coco-person.tflite) | COCO-Person      | Int8     | 192x192x3  | STM32N6570-DK   |   NPU/MCU      | 18.91 | 52.89 | 10.0.0 | 2.0.0 |
-| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_256_quant_pc_uf_od_coco-person.tflite) | COCO-Person      | Int8     | 256x256x3  | STM32N6570-DK   |   NPU/MCU      | 28.6 | 34.97 | 10.0.0 | 2.0.0 |
-| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_320_quant_pc_uf_od_coco-person.tflite) | COCO-Person      | Int8     | 320x320x3  | STM32N6570-DK   |   NPU/MCU      | 38.32 | 26.09 |       10.0.0        |     2.0.0   |
-| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_416_quant_pc_uf_od_coco-person.tflite) | COCO-Person      | Int8     | 416x416x3  | STM32N6570-DK   |   NPU/MCU      | 63.03 | 15.86 |       10.0.0        |     2.0.0   |
-
-
+| Model                                                                                                                                                                                 | Dataset     | Format   | Resolution   | Board         | Execution Engine   |   Inference time (ms) |   Inf / sec | STM32Cube.AI version   | STEdgeAI Core version   |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|----------|--------------|---------------|--------------------|-----------------------|-------------|------------------------|-------------------------|
+| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_192_quant_pc_uf_od_coco-person.tflite) | COCO-Person | Int8     | 192x192x3    | STM32N6570-DK | NPU/MCU            |                 16.88 |       59.24 | 10.2.0                 | 2.2.0                   |
+| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_256_quant_pc_uf_od_coco-person.tflite) | COCO-Person | Int8     | 256x256x3    | STM32N6570-DK | NPU/MCU            |                 24.94 |       40.1  | 10.2.0                 | 2.2.0                   |
+| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_320_quant_pc_uf_od_coco-person.tflite) | COCO-Person | Int8     | 320x320x3    | STM32N6570-DK | NPU/MCU            |                 31.75 |       31.5  | 10.2.0                 | 2.2.0                   |
+| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_416_quant_pc_uf_od_coco-person.tflite) | COCO-Person | Int8     | 416x416x3    | STM32N6570-DK | NPU/MCU            |                 53.11 |       18.83 | 10.2.0                 | 2.2.0                   |
 ### Reference **MPU** inference time based on COCO Person dataset (see Accuracy for details on dataset)
  Model         | Format | Resolution | Quantization  | Board             | Execution Engine | Frequency | Inference time (ms) | %NPU  | %GPU  | %CPU | X-LINUX-AI version |       Framework       |
 |-----------|--------|------------|---------------|-------------------|------------------|-----------|---------------------|-------|-------|------|--------------------|-----------------------|
-| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_256_quant_pc_uf_pose_coco-st.tflite) | Int8   | 256x256x3  |  per-channel**  | STM32MP257F-DK2   | NPU/GPU          | 800  MHz  | 102.8 ms            | 11.70  | 88.30 |0     | v5.0.0             | OpenVX                |
-| [YOLOv8n per tensor](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_256_quant_pt_uf_pose_coco-st.tflite)  | Int8   | 256x256x3  |  per-tensor     | STM32MP257F-DK2   | NPU/GPU          | 800  MHz  | 17.57 ms            | 86.79  | 13.21 |0     | v5.0.0             | OpenVX                |
+| [YOLOv8n per channel](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_256_quant_pc_uf_pose_coco-st.tflite) | Int8   | 256x256x3  |  per-channel**  | STM32MP257F-DK2   | NPU/GPU          | 800  MHz  | 102.8 ms            | 11.70  | 88.30 |0     | v6.1.0             | OpenVX                |
+| [YOLOv8n per tensor](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/object_detection/yolov8n_256_quant_pt_uf_pose_coco-st.tflite)  | Int8   | 256x256x3  |  per-tensor     | STM32MP257F-DK2   | NPU/GPU          | 800  MHz  | 17.57 ms            | 86.79  | 13.21 |0     | v6.1.0             | OpenVX                |
 
 ** **To get the most out of MP25 NPU hardware acceleration, please use per-tensor quantization**
 
@@ -98,7 +99,7 @@ Dataset details: [link](https://cocodataset.org/#download) , License [CC BY 4.0]
 Please refer to the stm32ai-modelzoo-services GitHub [here](https://github.com/STMicroelectronics/stm32ai-modelzoo-services).
 The models are stored in the Ultralytics repository. You can find them at the following link: [Ultralytics YOLOv8-STEdgeAI Models](https://github.com/stm32-hotspot/ultralytics/blob/main/examples/YOLOv8-STEdgeAI/stedgeai_models/).
 
-Please refer to the [Ultralytics documentation](https://docs.ultralytics.com/tasks/pose/#train) to retrain the models.
+Please refer to the [Ultralytics documentation](https://docs.ultralytics.com/tasks/detect/#train) to retrain the models.
 
 # References
 

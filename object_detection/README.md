@@ -12,5 +12,6 @@ Models are stored depending on the way they have been trained :
 * [st yolo x](./st_yolo_x/README.md)
 * [tiny yolo v2](./tiny_yolo_v2/README.md)
 * [yolo v8n](./yolov8n/README.md)
-* yolo v11n : Coming soon !
+* [blazeface front](./face_detect_front/README.md)
+* [yolo 11n](./yolo11n/README.md)
 

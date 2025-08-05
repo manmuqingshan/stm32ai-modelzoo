@@ -8,8 +8,7 @@ operation_mode: prediction
 
 dataset:
   name: COCO
-  classes_file_path : ../datasets/coco_classes.txt
-  class_names: 
+  classes_file_path : ./datasets/coco_classes.txt
 
 preprocessing:
   rescaling:
@@ -21,8 +20,8 @@ preprocessing:
   color_mode: rgb
 
 postprocessing:
-  confidence_thresh: 0.6
-  IoU_eval_thresh: 0.4
+  confidence_thresh: 0.5
+  IoU_eval_thresh: 0.5
 
 prediction:
   test_files_path: ./datasets/coco/images

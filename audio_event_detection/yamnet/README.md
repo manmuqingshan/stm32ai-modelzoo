@@ -79,27 +79,27 @@ For Yamnet-1024
 ### Reference **NPU** memory footprint based on ESC-10 dataset
 |Model      | Dataset       | Format   | Resolution | Series    | Internal RAM (KiB) | External RAM (KiB) | Weights Flash (KiB) | STM32Cube.AI version | STEdgeAI Core version |
 |----------|------------------|--------|-------------|------------------|------------------|---------------------|-------|----------------------|-------------------------|
-| [Yamnet 256](ST_pretrainedmodel_public_dataset/esc10/yamnet_256_64x96_tl/yamnet_256_64x96_tl_int8.tflite)  | esc-10 | Int8 | 64x96x1 | STM32N6 |                                                144 | 0.0 | 176.59 | 10.0.0 | 2.0.0 |
-| [Yamnet 1024](ST_pretrainedmodel_public_dataset/esc10/yamnet_1024_64x96_tl/yamnet_1024_64x96_tl_qdq_int8.onnx) | esc-10 | Int8 | 64x96x1 | STM32N6 |                                       144 | 0.0 | 3497.24 | 10.0.0 | 2.0.0 |
+| [Yamnet 256](ST_pretrainedmodel_public_dataset/esc10/yamnet_256_64x96_tl/yamnet_256_64x96_tl_int8.tflite)  | esc-10 | Int8 | 64x96x1 | STM32N6 |                                                144 | 0.0 | 167.7 | 10.2.0 | 2.2.0 |
+| [Yamnet 1024](ST_pretrainedmodel_public_dataset/esc10/yamnet_1024_64x96_tl/yamnet_1024_64x96_tl_qdq_int8.onnx) | esc-10 | Int8 | 64x96x1 | STM32N6 |                                       144 | 0.0 | 	3450.58 | 10.2.0 | 2.2.0 |
 
 ### Reference **NPU**  inference time  based on ESC-10 dataset
 | Model  | Dataset          | Format | Resolution  | Board            | Execution Engine | Inference time (ms) | Inf / sec   | STM32Cube.AI version  |  STEdgeAI Core version |
 |--------|------------------|--------|-------------|------------------|------------------|---------------------|-------|----------------------|-------------------------|
-| [Yamnet 256](ST_pretrainedmodel_public_dataset/esc10/yamnet_256_64x96_tl/yamnet_256_64x96_tl_int8.tflite) | esc-10      | Int8     | 64x96x1  | STM32N6570-DK   |   NPU/MCU      |              1.07      |   934.58           |       10.0.0        |     2.0.0   |
-| [Yamnet 1024](ST_pretrainedmodel_public_dataset/esc10/yamnet_1024_64x96_tl/yamnet_1024_64x96_tl_qdq_int8.onnx) | esc-10      | Int8     | 64x96x1  | STM32N6570-DK   |   NPU/MCU      |        9.88      |   101.21           |       10.0.0        |     2.0.0   |
+| [Yamnet 256](ST_pretrainedmodel_public_dataset/esc10/yamnet_256_64x96_tl/yamnet_256_64x96_tl_int8.tflite) | esc-10      | Int8     | 64x96x1  | STM32N6570-DK   |   NPU/MCU      |              1.05      |   952.38           |       10.2.0        |     2.2.0   |
+| [Yamnet 1024](ST_pretrainedmodel_public_dataset/esc10/yamnet_1024_64x96_tl/yamnet_1024_64x96_tl_qdq_int8.onnx) | esc-10      | Int8     | 64x96x1  | STM32N6570-DK   |   NPU/MCU      |        9.88      |   101.21           |       10.2.0        |     2.2.0   |
 
 
 ### Reference **MCU** memory footprint based on ESC-10 dataset
 | Model             | Format | Resolution | Series  | Activation RAM (kB) | Runtime RAM (kB) | Weights Flash (kB) | Code Flash (kB) | Total RAM (kB)  | Total Flash (kB) | STM32Cube.AI version  |
 |-------------------|--------|------------|---------|----------------|-------------|---------------|------------|-------------|-------------|-----------------------|
-|[Yamnet 256](ST_pretrainedmodel_public_dataset/esc10/yamnet_256_64x96_tl/yamnet_256_64x96_tl_int8.tflite) | Int8 | 64x96x1 | B-U585I-IOT02A    | 109.57               |   7.61        |   135.91           |   57.74   | 117.18 | 193.65 | 10.0.0 |
-|[Yamnet 1024](ST_pretrainedmodel_public_dataset/esc10/yamnet_1024_64x96_tl/yamnet_1024_64x96_tl_qdq_int8.onnx) | Int8 | 64x96x1 | STM32N6 | 108.59               |   35.41        |   3162.66           |  334.30   | 144.0 | 3496.96 | 10.0.0 |
+|[Yamnet 256](ST_pretrainedmodel_public_dataset/esc10/yamnet_256_64x96_tl/yamnet_256_64x96_tl_int8.tflite) | Int8 | 64x96x1 | B-U585I-IOT02A    | 109.57               |   7.61        |   135.91           |   56.67  | 117.18 | 192.58 | 10.2.0 |
+|[Yamnet 1024](ST_pretrainedmodel_public_dataset/esc10/yamnet_1024_64x96_tl/yamnet_1024_64x96_tl_qdq_int8.onnx) | Int8 | 64x96x1 | STM32N6 | 144.0               |   	1.67        |   3450.58          |  252.48  | 145.67 | 3703.06 | 10.2.0 |
 
 ### Reference inference time based on ESC-10 dataset
 | Model             | Format | Resolution | Board            | Execution Engine | Frequency    | Inference time  | STM32Cube.AI version  |
 |-------------------|--------|------------|------------------|------------------|--------------|-----------------|-----------------------|
-| [Yamnet 256](ST_pretrainedmodel_public_dataset/esc10/yamnet_256_64x96_tl/yamnet_256_64x96_tl_int8.tflite) | Int8 | 64x96x1 | B-U585I-IOT02A | 1 CPU | 160 MHz | 281.95 ms | 10.0.0    
-|[Yamnet 1024](ST_pretrainedmodel_public_dataset/esc10/yamnet_1024_64x96_tl/yamnet_1024_64x96_tl_qdq_int8.onnx) | Int8 | 64x96x1 | STM32N6 | 1 CPU + 1 NPU | 800MhZ/1000MhZ | 11.949 ms | 10.0.0
+| [Yamnet 256](ST_pretrainedmodel_public_dataset/esc10/yamnet_256_64x96_tl/yamnet_256_64x96_tl_int8.tflite) | Int8 | 64x96x1 | B-U585I-IOT02A | 1 CPU | 160 MHz | 279.62 ms | 10.2.0    
+|[Yamnet 1024](ST_pretrainedmodel_public_dataset/esc10/yamnet_1024_64x96_tl/yamnet_1024_64x96_tl_qdq_int8.onnx) | Int8 | 64x96x1 | STM32N6 | 1 CPU + 1 NPU | 800MhZ/1000MhZ | 9.88 ms | 10.2.0
 
 
 ### Accuracy with ESC-10 dataset

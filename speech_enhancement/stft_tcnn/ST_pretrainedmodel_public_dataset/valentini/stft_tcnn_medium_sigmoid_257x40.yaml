@@ -134,7 +134,7 @@ quantization:
 
 tools:
   stedgeai:
-    version: 10.0.0 # 10.0.0
+    version: 10.2.0 # 10.2.0
     optimization: balanced
     on_cloud: False
     path_to_stedgeai: C:/Users/<>/work/stedgeai_10_RC1/Utilities/windows/stedgeai.exe

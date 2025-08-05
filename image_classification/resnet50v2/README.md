@@ -62,32 +62,32 @@ For an image resolution of NxM and P classes
 
 ### Reference **NPU** memory footprint on food-101 and ImageNet dataset (see Accuracy for details on dataset)
 |Model      | Dataset       | Format   | Resolution | Series    | Internal RAM | External RAM | Weights Flash | STM32Cube.AI version | STEdgeAI Core version |
-|----------|------------------|--------|-------------|------------------|------------------|---------------------|-------|----------------------|-------------------------|
-| [ResNet50 v2 fft](./ST_pretrainedmodel_public_dataset/food-101/resnet50_v2_224_fft/resnet50_v2_224_fft_int8.tflite)  | food-101      | Int8     | 224x224x3  | STM32N6   |         |                |             |       10.0.0        |     2.0.0   |
-| [ResNet50 v2](./Public_pretrainedmodel_public_dataset/ImageNet/resnet50_v2_224/resnet50_v2_224_int8.tflite) | ImageNet      | Int8     | 224x224x3  | STM32N6   |         |                |             |       10.0.0        |     2.0.0   |
+|----------|------------------|--------|-------------|------------------|--------------|--------------|---------------|----------------------|-------------------------|
+| [ResNet50 v2 fft](./ST_pretrainedmodel_public_dataset/food-101/resnet50_v2_224_fft/resnet50_v2_224_fft_int8.tflite)  | food-101      | Int8     | 224x224x3  | STM32N6   | 2308.06 | 3136     | 23833.61  |       10.2.0        |     2.2.0   |
+| [ResNet50 v2](./Public_pretrainedmodel_public_dataset/ImageNet/resnet50_v2_224/resnet50_v2_224_int8.tflite) | ImageNet | Int8   | 224x224x3  | STM32N6   | 2308.06 | 3136.0  | 25633.55    |       10.2.0        |     2.2.0   |
 
 ### Reference **NPU**  inference time on food-101 and ImageNet dataset (see Accuracy for details on dataset)
-| Model  | Dataset          | Format | Resolution  | Board            | Execution Engine | Inference time (ms) | Inf / sec   | STM32Cube.AI version  |  STEdgeAI Core version |
-|--------|------------------|--------|-------------|------------------|------------------|---------------------|-------|----------------------|-------------------------|
-| [ResNet50 v2 fft](./ST_pretrainedmodel_public_dataset/food-101/resnet50_v2_224_fft/resnet50_v2_224_fft_int8.tflite) | food-101      | Int8     | 224x224x3  | STM32N6570-DK   |   NPU/MCU      |                |             |       10.0.0        |     2.0.0   |
-| [ResNet50 v2](./Public_pretrainedmodel_public_dataset/ImageNet/resnet50_v2_224/resnet50_v2_224_int8.tflite) | ImageNet      | Int8     | 224x224x3  | STM32N6570-DK   |   NPU/MCU      |                |             |       10.0.0        |     2.0.0   |
+| Model  | Dataset          | Format | Resolution  | Board            | Execution Engine | Inference time (ms) | Inf / sec | STM32Cube.AI version  |  STEdgeAI Core version |
+|--------|------------------|--------|-------------|------------------|------------------|---------------------|-----------|----------------------|-------------------------|
+| [ResNet50 v2 fft](./ST_pretrainedmodel_public_dataset/food-101/resnet50_v2_224_fft/resnet50_v2_224_fft_int8.tflite) | food-101      | Int8     | 224x224x3  | STM32N6570-DK   |   NPU/MCU      | 226.16       | 4.42      |       10.2.0        |     2.2.0   |
+| [ResNet50 v2](./Public_pretrainedmodel_public_dataset/ImageNet/resnet50_v2_224/resnet50_v2_224_int8.tflite) | ImageNet      | Int8     | 224x224x3  | STM32N6570-DK   |   NPU/MCU      |    231.59    |      4.31     |       10.2.0        |     2.2.0   |
 
 
 ### Reference **MCU** memory footprint based on Food-101 and ImageNet dataset (see Accuracy for details on dataset)
 
-| Model     | Format | Resolution | Series  | Activation RAM | Runtime RAM | Weights Flash | Code Flash | Total RAM   | Total Flash | STM32Cube.AI version  |
-|--------------------------------------------------------------------------------------------------------------------------------------|--------|------------|---------|----------------|-------------|---------------|------------|-------------|-------------|-----------------------|
-| [ResNet50 v2 fft](./ST_pretrainedmodel_public_dataset/food-101/resnet50_v2_224_fft/resnet50_v2_224_fft_int8.tflite) | Int8   | 224x224x3    | STM32H7 | 2142.07 KiB     | 41.02 KiB      | 23240.96 KiB    | 226.05 KiB  | 2183.09 KiB   | 23467.01 KiB  | 10.0.0  |
-| [ResNet50 v2](./Public_pretrainedmodel_public_dataset/ImageNet/resnet50_v2_224/resnet50_v2_224_int8.tflite)    | Int8   | 224x224x3    | STM32H7 | 2142.07 KiB     | 41.02 KiB      | 25042.47 KiB    | 226.05 KiB  | 2183.09 KiB   | 25268.52 KiB  | 10.0.0 |
+| Model     | Format | Resolution | Series  | Activation RAM | Runtime RAM | Weights Flash | Code Flash | Total RAM   | Total Flash     | STM32Cube.AI version  |
+|--------------------------------------------------------------------------------------------------------------------------------------|--------|------------|---------|----------------|-------------|---------------|------------|-------------|-----------------|-----------------------|
+| [ResNet50 v2 fft](./ST_pretrainedmodel_public_dataset/food-101/resnet50_v2_224_fft/resnet50_v2_224_fft_int8.tflite) | Int8   | 224x224x3    | STM32H7 | 2142.07 KiB     | 41.03 KiB   | 23240.96 KiB    | 225.32 KiB | 2183.1 KiB  | 23466.28 KiB | 10.2.0  |
+| [ResNet50 v2](./Public_pretrainedmodel_public_dataset/ImageNet/resnet50_v2_224/resnet50_v2_224_int8.tflite)    | Int8   | 224x224x3    | STM32H7 | 2142.07 KiB     | 41.03 KiB   | 25042.47 KiB    | 225.32 KiB | 2183.1 KiB | 25267.79 KiB    | 10.2.0 |
 
 
 ### Reference **MCU** inference time based on Food-101 and ImageNet dataset (see Accuracy for details on dataset)
 
 
 | Model             | Format | Resolution | Board            | Execution Engine | Frequency | Inference time (ms) | STM32Cube.AI version  |
-|-------------------|--------|------------|------------------|------------------|-----------|------------------|-----------------------|
-| [ResNet50 v2 fft](./ST_pretrainedmodel_public_dataset/food-101/resnet50_v2_224_fft/resnet50_v2_224_fft_int8.tflite) | Int8   | 224x224x3   | STM32H747I-DISCO | 1 CPU            | 400 MHz   | 11354.82 ms        | 10.0.0                 |
-| [ResNet50 v2](./Public_pretrainedmodel_public_dataset/ImageNet/resnet50_v2_224/resnet50_v2_224_int8.tflite) | Int8   | 224x224x3    | STM32H747I-DISCO | 1 CPU            | 400 MHz   | 11368.81 ms        | 10.0.0                 |
+|-------------------|--------|------------|------------------|------------------|-----------|---------------------|-----------------------|
+| [ResNet50 v2 fft](./ST_pretrainedmodel_public_dataset/food-101/resnet50_v2_224_fft/resnet50_v2_224_fft_int8.tflite) | Int8   | 224x224x3   | STM32H747I-DISCO | 1 CPU            | 400 MHz   | 11360.76 ms         | 10.2.0                 |
+| [ResNet50 v2](./Public_pretrainedmodel_public_dataset/ImageNet/resnet50_v2_224/resnet50_v2_224_int8.tflite) | Int8   | 224x224x3    | STM32H747I-DISCO | 1 CPU            | 400 MHz   |  11370.07       | 10.2.0                 |
 
 
 

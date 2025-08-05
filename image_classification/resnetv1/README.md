@@ -63,22 +63,22 @@ For an image resolution of NxM and P classes
 
 | Model                                                                                                                                 | Format | Resolution  | Series  | Activation RAM | Runtime RAM | Weights Flash | Code Flash | Total RAM | Total Flash | STM32Cube.AI version  |
 |---------------------------------------------------------------------------------------------------------------------------------------|--------|-------------|---------|----------------|-------------|---------------|------------|-----------|-------------|-----------------------|
-| [ResNet v1 8 tfs](./ST_pretrainedmodel_public_dataset/cifar10/resnet_v1_8_32_tfs/resnet_v1_8_32_tfs_int8.tflite)                      | Int8   | 32x32x3     | STM32H7 | 62.51 KiB      | 7.21 KiB    | 76.9 KiB      | 56.45 KiB  | 69.72 KiB | 133.35 KiB  | 10.0.0                 |
+| [ResNet v1 8 tfs](./ST_pretrainedmodel_public_dataset/cifar10/resnet_v1_8_32_tfs/resnet_v1_8_32_tfs_int8.tflite)                      | Int8   | 32x32x3     | STM32H7 | 62.51 KiB      | 7.21 KiB    | 76.9 KiB      | 55.32 KiB  | 69.72 KiB | 132.22 KiB  | 10.2.0                 |
 
 
 ### Reference **MCU** inference time based on Cifar 10 dataset (see Accuracy for details on dataset)
 
 | Model                            | Format | Resolution  | Board            | Execution Engine | Frequency    | Inference time (ms) | STM32Cube.AI version  |
 |----------------------------------|--------|-------------|------------------|------------------|--------------|---------------------|-----------------------|
-| [ResNet v1 8 tfs](./ST_pretrainedmodel_public_dataset/cifar10/resnet_v1_8_32_tfs/resnet_v1_8_32_tfs_int8.tflite) | Int8   | 32x32x3     | STM32H747I-DISCO | 1 CPU            | 400 MHz      | 28.67 ms            | 10.0.0                 |
+| [ResNet v1 8 tfs](./ST_pretrainedmodel_public_dataset/cifar10/resnet_v1_8_32_tfs/resnet_v1_8_32_tfs_int8.tflite) | Int8   | 32x32x3     | STM32H747I-DISCO | 1 CPU            | 400 MHz      | 28.59 ms            | 10.2.0                 |
 
 
 ### Reference **MPU** inference time based on Flowers dataset (see Accuracy for details on dataset)
 | Model                                                                                                                                 |  Format  | Resolution | Quantization  | Board             | Execution Engine | Frequency | Inference time (ms) | %NPU  | %GPU  | %CPU | X-LINUX-AI version |       Framework       |
 |---------------------------------------------------------------------------------------------------------------------------------------|----------|------------|---------------|-------------------|------------------|-----------|---------------------|-------|-------|------|--------------------|-----------------------|
-| [ResNet v1 8 tfs](./ST_pretrainedmodel_public_dataset/cifar10/resnet_v1_8_32_tfs/resnet_v1_8_32_tfs_int8.tflite)                      | Int8     | 32x32x3    |  per-channel**  | STM32MP257F-DK2   | NPU/GPU          | 800  MHz  | 2.02 ms             | 12.26 | 87.74 | 0    |   v5.1.0           | OpenVX                |
-| [ResNet v1 8 tfs](./ST_pretrainedmodel_public_dataset/cifar10/resnet_v1_8_32_tfs/resnet_v1_8_32_tfs_int8.tflite)                      | Int8     | 32x32x3    |  per-channel  | STM32MP157F-DK2   | 2 CPU            | 800  MHz  | 6.50 ms             | NA    | NA    | 100  |   v5.1.0           | TensorFlowLite 2.11.0 |
-| [ResNet v1 8 tfs](./ST_pretrainedmodel_public_dataset/cifar10/resnet_v1_8_32_tfs/resnet_v1_8_32_tfs_int8.tflite)                      | Int8     | 32x32x3    |  per-channel  | STM32MP135F-DK2   | 1 CPU            | 1000 MHz  | 10.77 ms            | NA    | NA    | 100  |   v5.1.0           | TensorFlowLite 2.11.0 |
+| [ResNet v1 8 tfs](./ST_pretrainedmodel_public_dataset/cifar10/resnet_v1_8_32_tfs/resnet_v1_8_32_tfs_int8.tflite)                      | Int8     | 32x32x3    |  per-channel**  | STM32MP257F-DK2   | NPU/GPU          | 800  MHz  | 2.09 ms             | 15.63 | 84.37 | 0    |   v6.1.0           | OpenVX                |
+| [ResNet v1 8 tfs](./ST_pretrainedmodel_public_dataset/cifar10/resnet_v1_8_32_tfs/resnet_v1_8_32_tfs_int8.tflite)                      | Int8     | 32x32x3    |  per-channel  | STM32MP157F-DK2   | 2 CPU            | 800  MHz  | 6.49 ms             | NA    | NA    | 100  |   v6.1.0           | TensorFlowLite 2.18.0 |
+| [ResNet v1 8 tfs](./ST_pretrainedmodel_public_dataset/cifar10/resnet_v1_8_32_tfs/resnet_v1_8_32_tfs_int8.tflite)                      | Int8     | 32x32x3    |  per-channel  | STM32MP135F-DK2   | 1 CPU            | 1000 MHz  | 10.34 ms            | NA    | NA    | 100  |   v6.1.0           | TensorFlowLite 2.18.0 |
 
 
 ** **To get the most out of MP25 NPU hardware acceleration, please use per-tensor quantization**
@@ -100,9 +100,9 @@ For an image resolution of NxM and P classes
 ### Reference **MPU** inference time based on Flowers dataset (see Accuracy for details on dataset)
 | Model                                                                                                               |  Format  | Resolution | Quantization  | Board             | Execution Engine | Frequency | Inference time (ms) | %NPU  | %GPU  | %CPU | X-LINUX-AI version |       Framework       |
 |---------------------------------------------------------------------------------------------------------------------|----------|------------|---------------|-------------------|------------------|-----------|---------------------|-------|-------|------|--------------------|-----------------------|
-|[ResNet v1 32 tfs](./ST_pretrainedmodel_public_dataset/cifar100/resnet_v1_32_32_tfs/resnet_v1_32_32_tfs_int8.tflite) | Int8     | 32x32x3    |  per-channel  | STM32MP257F-DK2   | NPU/GPU          | 800  MHz  | 9.160 ms            | 14.75 | 85.25 | 0    |   v5.1.0           | OpenVX                |
-|[ResNet v1 32 tfs](./ST_pretrainedmodel_public_dataset/cifar100/resnet_v1_32_32_tfs/resnet_v1_32_32_tfs_int8.tflite) | Int8     | 32x32x3    |  per-channel  | STM32MP157F-DK2   | 2 CPU            | 800  MHz  | 34.78 ms            | NA    | NA    | 100  |   v5.1.0           | TensorFlowLite 2.11.0 |
-|[ResNet v1 32 tfs](./ST_pretrainedmodel_public_dataset/cifar100/resnet_v1_32_32_tfs/resnet_v1_32_32_tfs_int8.tflite) | Int8     | 32x32x3    |  per-channel  | STM32MP135F-DK2   | 1 CPU            | 1000 MHz  | 55.32 ms            | NA    | NA    | 100  |   v5.1.0           | TensorFlowLite 2.11.0 |
+|[ResNet v1 32 tfs](./ST_pretrainedmodel_public_dataset/cifar100/resnet_v1_32_32_tfs/resnet_v1_32_32_tfs_int8.tflite) | Int8     | 32x32x3    |  per-channel  | STM32MP257F-DK2   | NPU/GPU          | 800  MHz  | 9.160 ms            | 14.75 | 85.25 | 0    |   v6.1.0           | OpenVX                |
+|[ResNet v1 32 tfs](./ST_pretrainedmodel_public_dataset/cifar100/resnet_v1_32_32_tfs/resnet_v1_32_32_tfs_int8.tflite) | Int8     | 32x32x3    |  per-channel  | STM32MP157F-DK2   | 2 CPU            | 800  MHz  | 34.78 ms            | NA    | NA    | 100  |   v6.1.0           | TensorFlowLite 2.11.0 |
+|[ResNet v1 32 tfs](./ST_pretrainedmodel_public_dataset/cifar100/resnet_v1_32_32_tfs/resnet_v1_32_32_tfs_int8.tflite) | Int8     | 32x32x3    |  per-channel  | STM32MP135F-DK2   | 1 CPU            | 1000 MHz  | 55.32 ms            | NA    | NA    | 100  |   v6.1.0           | TensorFlowLite 2.11.0 |
 
 
 ### Accuracy with Cifar10 dataset

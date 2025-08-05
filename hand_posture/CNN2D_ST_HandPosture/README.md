@@ -56,8 +56,8 @@ Measures are done with default STM32Cube.AI configuration with enabled input / o
 
 | Model             | Format | Input Shape | Series  | Activation RAM (KiB) | Runtime RAM (KiB) | Weights Flash (KiB) | Code Flash (KiB) | Total RAM (KiB)   | Total Flash (KiB) | STM32Cube.AI version  |
 |:-----------------:|:------:|:-----------:|:-------:|:--------------:|:-----------:|:-------------:|:----------:|:-----------:|:-----------:|:---------------------:|
-| [CNN2D_ST_HandPosture](ST_pretrainedmodel_custom_dataset/ST_VL53L8CX_handposture_dataset/CNN2D_ST_HandPosture_8classes/CNN2D_ST_HandPosture_8classes.h5) | FLOAT32   | 8 x 8 x 2    | STM32F4 | 1.07     | 2.08       | 10.75    | 14.37       |  3.15    | 25.12  | 10.0.0                 |
-| [CNN2D_ST_HandPosture](ST_pretrainedmodel_custom_dataset/ST_VL53L5CX_handposture_dataset/CNN2D_ST_HandPosture_8classes/CNN2D_ST_HandPosture_8classes.h5) | FLOAT32   | 8 x 8 x 2    | STM32F4 | 1.07      | 2.08        | 10.75     | 14.37        |  3.15    | 25.12   | 10.0.0                 |
+| [CNN2D_ST_HandPosture](ST_pretrainedmodel_custom_dataset/ST_VL53L8CX_handposture_dataset/CNN2D_ST_HandPosture_8classes/CNN2D_ST_HandPosture_8classes.h5) | FLOAT32   | 8 x 8 x 2    | STM32F4 | 1.07     | 2.08       | 10.75    | 14.37       |  3.15    | 25.12  | 10.2.0                 |
+| [CNN2D_ST_HandPosture](ST_pretrainedmodel_custom_dataset/ST_VL53L5CX_handposture_dataset/CNN2D_ST_HandPosture_8classes/CNN2D_ST_HandPosture_8classes.h5) | FLOAT32   | 8 x 8 x 2    | STM32F4 | 1.07      | 2.08        | 10.75     | 14.37        |  3.15    | 25.12   | 10.2.0                 |
 
 
 ### Reference inference time based on ST_VL53LxCX_handposture_dataset (see Accuracy for details on dataset)
@@ -65,8 +65,8 @@ Measures are done with default STM32Cube.AI configuration with enabled input / o
 
 | Model             | Format | Resolution | Board            |   Frequency   | Inference time (ms) | STM32Cube.AI version  |
 |:-----------------:|:------:|:----------:|:----------------:|:-------------:|:-------------------:|:---------------------:|
-| [CNN2D_ST_HandPosture](ST_pretrainedmodel_custom_dataset/ST_VL53L8CX_handposture_dataset/CNN2D_ST_HandPosture_8classes/CNN2D_ST_HandPosture_8classes.h5) | FLOAT32   | 8 x 8 x 2    | STM32F401 | 84 MHz       |    1.54  ms       | 10.0.0                 |
-| [CNN2D_ST_HandPosture](ST_pretrainedmodel_custom_dataset/ST_VL53L5CX_handposture_dataset/CNN2D_ST_HandPosture_8classes/CNN2D_ST_HandPosture_8classes.h5) | FLOAT32   | 8 x 8 x 2    | STM32F401 | 84 MHz       |    1.53  ms       | 10.0.0                 |
+| [CNN2D_ST_HandPosture](ST_pretrainedmodel_custom_dataset/ST_VL53L8CX_handposture_dataset/CNN2D_ST_HandPosture_8classes/CNN2D_ST_HandPosture_8classes.h5) | FLOAT32   | 8 x 8 x 2    | STM32F401 | 84 MHz       |    1.54  ms       | 10.2.0                 |
+| [CNN2D_ST_HandPosture](ST_pretrainedmodel_custom_dataset/ST_VL53L5CX_handposture_dataset/CNN2D_ST_HandPosture_8classes/CNN2D_ST_HandPosture_8classes.h5) | FLOAT32   | 8 x 8 x 2    | STM32F401 | 84 MHz       |    1.53  ms       | 10.2.0                 |
 
 ### Accuracy with ST_VL53LxCX_handposture_dataset
 
