@@ -17,7 +17,14 @@ These models can be useful for quick deployment if you are interested in the cat
 
 The performances on reference STM32 MCU, NPU and MPU are provided for float and quantized models.
 
+
+
 ## What's new in releases :
+<details open><summary><b>4.0:</b></summary>
+
+### 📢 4.0 Release is coming soon ...!
+
+                                                          
 </details>
 <details open><summary><b>3.2:</b></summary>
 
