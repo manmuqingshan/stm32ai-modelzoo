@@ -22,7 +22,8 @@ The performances on reference STM32 MCU, NPU and MPU are provided for float and 
 ## What's new in releases :
 <details open><summary><b>4.0:</b></summary>
 
-### 📢 4.0 Release is coming soon ...!
+### 📢 4.0 Release is coming soon! Scheduled for January 22, 2026.
+- This release will introduce new features and important changes.
 
                                                           
 </details>
